@@ -1,0 +1,31 @@
+# Function to handle responses based on user input
+def chatbot_response(user_input):
+    # Convert user input to lowercase for easier matching
+    user_input = user_input.lower()
+
+    Define some simple responses
+    if "hello" in user_input or "hi" in user_input:
+        return "Hello! How can I help you today?"
+    elif "how are you" in user_input:
+        return "I'm just a bot, but I'm doing great! How about you?"
+    elif "your name" in user_input:
+        return "I am your friendly chatbot! What's your name?"
+    elif "bye" in user_input or "exit" in user_input:
+        return "Goodbye! Have a great day!"
+    else:
+        return "Sorry, I don't understand that. Can you ask something else?"
+
+# Main loop to interact with the user
+def chat():
+    print("Welcome to the chatbot! Type 'exit' to end the conversation.")
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() in ["exit", "bye"]:
+            print("Chatbot: Goodbye!")
+            break
+        response = chatbot_response(user_input)
+        print("Chatbot:", response)
+
+# Start the chat
+if __name__ == "__main__":
+    chat()
