@@ -1,31 +1,21 @@
-# Function to handle responses based on user input
-def chatbot_response(user_input):
-    # Convert user input to lowercase for easier matching
-    user_input = user_input.lower()
+# Chatbot program
 
-    Define some simple responses
-    if "hello" in user_input or "hi" in user_input:
-        return "Hello! How can I help you today?"
-    elif "how are you" in user_input:
-        return "I'm just a bot, but I'm doing great! How about you?"
-    elif "your name" in user_input:
-        return "I am your friendly chatbot! What's your name?"
-    elif "bye" in user_input or "exit" in user_input:
-        return "Goodbye! Have a great day!"
-    else:
-        return "Sorry, I don't understand that. Can you ask something else?"
+# Step 1: Ask for the user's name and store it
+user_name = input("What is your name? ")
 
-# Main loop to interact with the user
-def chat():
-    print("Welcome to the chatbot! Type 'exit' to end the conversation.")
-    while True:
-        user_input = input("You: ")
-        if user_input.lower() in ["exit", "bye"]:
-            print("Chatbot: Goodbye!")
-            break
-        response = chatbot_response(user_input)
-        print("Chatbot:", response)
+# Greet the user
+print(f"Hello, {user_name}! Nice to meet you.")
 
-# Start the chat
-if __name__ == "__main__":
-    chat()
+# Step 2: Ask three more questions and store the answers
+favorite_color = input(f"Nice to meet you, {user_name}! What's your favorite color? ")
+favorite_food = input(f"What's your favorite food, {user_name}? ")
+hobby = input(f"What do you like to do in your free time, {user_name}? ")
+
+# Step 3: Respond to the user with their inputs
+print(f"\nGreat to know, {user_name}!")
+print(f"Your favorite color is {favorite_color}, that sounds beautiful!")
+print(f"{favorite_food} is a great choice, who doesn't love good food?")
+print(f"Ah, {hobby}, that sounds like a fun way to spend your free time!")
+
+# End the conversation
+print("\nThanks for chatting! Have a wonderful day!")
