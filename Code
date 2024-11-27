@@ -1,21 +1,16 @@
-# Chatbot program
-
-# Step 1: Ask for the user's name and store it
 user_name = input("What is your name? ")
+print(f"Hello, {user_name}, my name is Chatter, a modern day chat bot to entertian your boredom. It is a pleasure to meet you!")
 
-# Greet the user
-print(f"Hello, {user_name}! Nice to meet you.")
 
-# Step 2: Ask three more questions and store the answers
 favorite_color = input(f"Nice to meet you, {user_name}! What's your favorite color? ")
 favorite_food = input(f"What's your favorite food, {user_name}? ")
 hobby = input(f"What do you like to do in your free time, {user_name}? ")
 
-# Step 3: Respond to the user with their inputs
-print(f"\nGreat to know, {user_name}!")
+
+print(f"\n That is wonderful! , {user_name}!")
 print(f"Your favorite color is {favorite_color}, that sounds beautiful!")
 print(f"{favorite_food} is a great choice, who doesn't love good food?")
 print(f"Ah, {hobby}, that sounds like a fun way to spend your free time!")
 
-# End the conversation
+
 print("\nThanks for chatting! Have a wonderful day!")
