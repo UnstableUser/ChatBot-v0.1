@@ -1,16 +1,18 @@
 user_name = input("What is your name? ")
-print(f"Hello, {user_name}, my name is Chatter, a modern day chat bot to entertian your boredom. It is a pleasure to meet you!")
+print(f"   Hello, {user_name}, my name is Chatter.bot, a modern day chat bot to entertian your boredom. It is a pleasure to meet you!")
+
+favorite_color = input(f"   Nice to meet you, {user_name}! What's your favorite color? ")
+print(f"    Your favorite color is {favorite_color}, that sounds beautiful!")  
 
 
-favorite_color = input(f"Nice to meet you, {user_name}! What's your favorite color? ")
-favorite_food = input(f"What's your favorite food, {user_name}? ")
-hobby = input(f"What do you like to do in your free time, {user_name}? ")
+favorite_food = input(f"   What's your favorite food, {user_name}? ")
+print(f"   {favorite_food} is a great choice, who doesn't love {favorite_food}?")
 
 
-print(f"\n That is wonderful! , {user_name}!")
-print(f"Your favorite color is {favorite_color}, that sounds beautiful!")
-print(f"{favorite_food} is a great choice, who doesn't love good food?")
-print(f"Ah, {hobby}, that sounds like a fun way to spend your free time!")
+hobby = input(f"   What do you like to do in your free time, {user_name}? ")
+print(f"    Ah, {hobby}, that sounds like a fun way to spend your free time!")
 
 
-print("\nThanks for chatting! Have a wonderful day!")
+
+print(f"\n   That is wonderful! , {user_name}! I am glad that I am getting to know you better!")
+print("\n   Thanks for chatting, {user_name}! Have a wonderful day!")
